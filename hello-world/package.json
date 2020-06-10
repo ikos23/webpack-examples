@@ -4,6 +4,8 @@
   "description": "A very simple webapp to demo webpack :)",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
     "test": "test"
   },
   "author": "ivk23",

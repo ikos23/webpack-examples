@@ -1,5 +1,19 @@
 # webpack-hello-world
 
+## Step #3
+
+It's time to start configuring `webpack` 😃. We begin with
+the very basic properties we need to add to `webpack.config.js`:
+
+- An entry point indicates which module webpack should use to begin building out its internal dependency graph.
+- The output property tells webpack where to emit the bundles it creates and how to name these files.
+
+The css and images and other stuff is not working yet, but if we run `npx webpack` we will
+get `index.html` with all the JavaScript working ^\_^
+
+Let's also add a few scripts to `package.json`,
+to build our app easily with: `npm run dev` or `npm run build`.
+
 ## Step #2
 
 Let's add `webpack` to our small project.
