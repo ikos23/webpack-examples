@@ -1,0 +1,11 @@
+{
+  "name": "webpack-babel-react",
+  "version": "1.0.0",
+  "description": "Simple React App built from scratch",
+  "private": true,
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ivk23",
+  "license": "ISC"
+}
