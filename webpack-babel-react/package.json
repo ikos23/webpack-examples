@@ -4,8 +4,17 @@
   "description": "Simple React App built from scratch",
   "private": true,
   "scripts": {
+    "dev": "webpack --mode development",
     "test": "test"
   },
   "author": "ivk23",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
