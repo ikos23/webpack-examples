@@ -1,12 +1,29 @@
 # webpack-hello-world
 
+## Step #4
+
+The time has come to fix other stuff:
+
+- css/styles should work
+- image and favicon.ico should be loaded
+
+In order to achieve our goals, we need:
+
+- Loaders (`module.rules`) to handle css and images.
+- `HtmlWebpackPlugin` to create index.html will all the stuff included.
+- `CleanWebpackPlugin` to clean up `dist` before every new build.
+- The favicon.ico is a special file that we'd like to copy to `dist` dir,
+  this is why we need `CopyPlugin`.
+
 ## Step #3
 
 It's time to start configuring `webpack` 😃. We begin with
 the very basic properties we need to add to `webpack.config.js`:
 
-- An entry point indicates which module webpack should use to begin building out its internal dependency graph.
-- The output property tells webpack where to emit the bundles it creates and how to name these files.
+- An entry point indicates which module webpack should use
+  to begin building out its internal dependency graph.
+- The output property tells webpack where to emit
+  the bundles it creates and how to name these files.
 
 The css and images and other stuff is not working yet, but if we run `npx webpack` we will
 get `index.html` with all the JavaScript working ^\_^
