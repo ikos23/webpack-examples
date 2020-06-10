@@ -1,19 +1,41 @@
 # webpack-hello-world
 
-## Step #4
+Getting started with Webpack step by step ✌.
 
-The time has come to fix other stuff:
+## Step #1
 
-- css/styles should work
-- image and favicon.ico should be loaded
+This is a very simple webapp. There is no [webpack](https://webpack.js.org/)
+(or any other stuff) yet. 😄
 
-In order to achieve our goals, we need:
+There are just some files that we will need to demo different webpack's features.
 
-- Loaders (`module.rules`) to handle css and images.
-- `HtmlWebpackPlugin` to create index.html will all the stuff included.
-- `CleanWebpackPlugin` to clean up `dist` before every new build.
-- The favicon.ico is a special file that we'd like to copy to `dist` dir,
-  this is why we need `CopyPlugin`.
+```
+📂hello-world
+  📂assets
+  index.html
+  App.js
+  utils.js
+  index.js
+```
+
+## Step #2
+
+Let's add `webpack` to our small project.
+
+- First, we need to change project structure a bit.
+  Let's create `src` directory and move everything
+  into it (`index.html` can stay where it is).
+- Second, we run [`npm init`](https://docs.npmjs.com/cli/init) to init new project.
+- After, we can add [`webpack.config.js`](https://webpack.js.org/concepts/configuration/) config file.
+- And now, it is time to install webpack: `npm i -D webpack webpack-cli`.
+
+```
+📂hello-world
+  📂src
+  index.html
+  package.json
+  webpack.config.js
+```
 
 ## Step #3
 
@@ -31,37 +53,23 @@ get `index.html` with all the JavaScript working ^\_^
 Let's also add a few scripts to `package.json`,
 to build our app easily with: `npm run dev` or `npm run build`.
 
-## Step #2
+## Step #4
 
-Let's add `webpack` to our small project.
+The time has come to fix other stuff:
 
-- First, we need to change a structure a bit.
-  Let's create `src` directory and move everything
-  into it (`index.html` can stay where it is).
-- Second, we run [`npm init`](https://docs.npmjs.com/cli/init) to init new project.
-- After, we can add [`webpack.config.js`](https://webpack.js.org/concepts/configuration/) config file.
-- And now, it is time to install webpack: `npm i -D webpack webpack-cli`.
+- css/styles should work
+- image and favicon.ico should be loaded
 
-```
-📂hello-world
-  📂src
-  index.html
-  package.json
-  webpack.config.js
-```
+In order to achieve our goals, we need:
 
-## Step #1
+- Loaders (`module.rules`) to handle css and images.
+- `HtmlWebpackPlugin` to create index.html will all the stuff included.
+- `CleanWebpackPlugin` to clean up `dist` before every new build.
+- The favicon.ico is a special file that we'd like to copy to `dist` dir,
+  this is why we need `CopyPlugin`.
 
-This is a very simple webapp. There is no [webpack](https://webpack.js.org/)
-(or any other stuff) yet. 😄
+## Step #5
 
-There are just cdsome files we will need to demo different webpack's features.
-
-```
-📂hello-world
-  📂assets
-  index.html
-  App.js
-  utils.js
-  index.js
-```
+This is it 😃. We can now run `npm run dev` or `npm run build` and
+get our app in `dist` folder, ready to use and `webpack` takes care
+about JavaScript, CSS, images, etc.
