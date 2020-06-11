@@ -1,3 +1,5 @@
-console.log("this is index.js");
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
-document.getElementById("root").innerHTML = "Dummy Content :)";
+ReactDOM.render(<App />, document.getElementById("root"));

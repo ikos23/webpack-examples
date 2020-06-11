@@ -5,13 +5,20 @@
   "private": true,
   "scripts": {
     "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start:dev": "webpack-dev-server --mode development --hot --open",
     "test": "test"
   },
   "author": "ivk23",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "react": "^16.13.1",
