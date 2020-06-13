@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./Branda-yolq.ttf') format('truetype');
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  background-image: url("./image.jpg");
+  width: 274px;
+  height: 183px;
+}
+
+.customFont {
+  font-family: "MyFont";
+  font-size: 25px;
+}

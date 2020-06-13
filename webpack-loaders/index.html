@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webpack Loaders</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h2>Webpack Loaders</h2>
+    </div>
+    <div class="row">
+      <p>Image loaded from css file as background-image:</p>
+      <div class="logo"></div>
+
+      <p>Image loaded by a script:</p>
+      <img id="img" />
+    </div>
+
+    <div class="row">
+      JSON loaded from file:
+      <pre id="json"></pre>
+      XML loaded from file:
+      <pre id="xml">You might want to open Dev Console :)</pre>
+    </div>
+
+    <div class="row">
+      <h5 class="customFont">This text uses custom font which is also loaded by Webpack :)</h5>
+    </div>
+  </div>
+
+  <script src="dist/my.bundle.js"></script>
+</body>
+
+</html>
